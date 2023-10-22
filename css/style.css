@@ -1,0 +1,894 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font
+{
+	font-family: 'Pacifico', cursive;
+}
+
+.blanc
+{
+	color: white;
+}
+
+.vert
+{
+	color: green;
+}
+
+.corps
+{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+header
+{
+	border: 2px solid black;
+	width: 100%;
+	background-color: brown;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-bottom: 15px
+}
+
+.brand
+{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 25px;
+}
+
+.menu
+{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+header a
+{
+	text-decoration: none;
+	font-size: 3lvh;
+}
+
+#nav1:hover
+{
+	font-size: 3.5lvh;
+	text-decoration: underline white;
+}
+#nav2:hover
+{
+	font-size: 3.5lvh;
+	text-decoration: underline white;
+}
+#nav3:hover
+{
+	font-size: 3.5lvh;
+	text-decoration: underline white;
+}
+#nav4:hover
+{
+	font-size: 3.5lvh;
+	text-decoration: underline white;
+}
+
+header li
+{
+	display: inline-block;
+	list-style: none;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#image-accueil
+{
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+#boite-1
+{
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 35%;
+	right: 35%;
+	/* background-color: black; */
+	width: 30%;
+	height: auto;
+}
+
+.boite-2
+{
+	position: absolute;
+	z-index: 1;
+	top: 75%;
+	left: 25%;
+	right: 25%;
+	/* background-color: black; */
+	width: 50%;
+	height: auto;
+}
+
+.bouton-nous-contacter
+{
+	position: absolute;
+	z-index: 1;
+	top: 90%;
+	left: 25%;
+	right: 25%;
+	width: 50%;
+	height: auto;
+	padding: 10px;
+	background-color: brown;
+	border-radius: 50px;
+	border: 2px solid black;
+	font-size: 4lvh;
+}
+
+.bouton-nous-contacter:hover
+{
+	cursor: pointer;
+	background-color: white;
+	border: 2px solid brown;
+}
+
+.btn-nous-trouver:hover
+{
+	color: brown;
+}
+
+.text-image
+{
+	width: 100%;
+	text-align: center;
+	height: auto;
+	font-size: 10lvh;
+    left: 0;
+    right: 0;
+}
+
+.carte
+{
+	border: 2px solid black;
+}
+
+.titre-carte
+{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 5lvh;
+}
+
+.titre-grid
+{
+	text-align: center;
+	font-size: 3lvh;
+	margin: auto;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/* grid-gap: 10px; */
+	grid-auto-rows: minmax(100px, auto);
+	margin-bottom: 50px;
+  }
+  .one {
+	grid-column: 1 ;
+	grid-row: 1;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0;
+	/* background-color: blue;	 */
+  }
+  .two {
+	grid-column: 2;
+	grid-row: 1;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0;
+	/* background-color: rgb(8, 46, 17); */
+  }
+  .three {
+	grid-column: 3 ;
+	grid-row: 1;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0;
+	/* background-color: blue; */
+  }
+  .four {
+	grid-column: 1;
+	grid-row: 2;
+	width: 95%;
+	height: 250px;
+	margin: auto;
+	margin-top: 15px;
+	/* background-color: blue; */
+	background: url('../images/bruschetta.jpg');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  }
+
+  .four:hover
+  {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  }
+
+  .five {
+	grid-column: 2;
+	grid-row: 2;
+	width: 95%;
+	height: 250px;
+	margin: auto;
+	margin-top: 15px;
+	background: url('../images/osso-buco-2535546_1920.jpg');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+	/* background-color: rgb(8, 46, 17); */
+  }
+
+  .five:hover
+  {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  }
+
+  .six {
+	grid-column: 3;
+	grid-row: 2;
+	width: 95%;
+	height: 250px;
+	margin: auto;
+	margin-top: 10px;
+	background: url('../images/tiramisu-4098241_1920.jpg');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+	/* background-color: blue; */
+  }
+
+  .six:hover
+  {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  }
+
+  .seven {
+	grid-column: 1;
+	grid-row: 3;
+	width: 95%;
+	margin: auto;
+	margin-top: 15px;
+	font-size: 2.6lvh;
+	text-align: center;
+	/* background-color: blue; */
+  }
+  .eight {
+	grid-column: 2;
+	grid-row: 3;
+	width: 95%;
+	margin: auto;
+	margin-top: 15px;
+	font-size: 2.6lvh;
+	text-align: center;
+	/* background-color: rgb(8, 46, 17); */
+  }
+  .nine {
+	grid-column: 3;
+	grid-row: 3;
+	width: 95%;
+	margin: auto;
+	margin-top: 15px;
+	font-size: 2.6lvh;
+	text-align: center;
+	/* background-color: blue; */
+  }
+
+.services
+{
+	border: 2px solid black;
+	border-top: 1px solid brown;
+	background-color: brown;
+}
+
+.titre-services
+{
+	margin-top: 15px;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 4.5lvh;
+}
+
+.text-services
+{
+	color: white;
+	text-align: center;
+}
+
+.wrapper2
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* grid-gap: 10px; */
+	grid-auto-rows: minmax(100px, auto);
+	margin-bottom: 50px;
+}
+.service-one
+{
+	grid-column: 1 ;
+	grid-row: 1;
+	width: 55%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	background: url('../images/pizza-5349414_1920.jpg');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+	/* background-color: blue; */
+}
+
+.service-two
+{
+	grid-column: 2 ;
+	grid-row: 1;
+	width: 55%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	font-size: 2.6lvh;
+	display: flex;
+	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+	  background-color: rgba(52, 12, 12, 0.551);
+	  border: 2px solid rgba(41, 10, 10, 0.271);
+
+	/* background-color: rgb(68, 255, 0); */
+}
+
+.service-three
+{
+	grid-column: 1 ;
+	grid-row: 2;
+	width: 55%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	font-size: 2.6lvh;
+	display: flex;
+	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+	  background-color: rgba(52, 12, 12, 0.551);
+	  border: 2px solid rgba(41, 10, 10, 0.271);
+	/* background-color: blue; */
+}
+
+.service-four
+{
+	grid-column: 2 ;
+	grid-row: 2;
+	width: 55%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	background: url('../images/market-3916964_1920.jpg');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+	/* background-color: rgb(68, 255, 0); */
+}
+
+.service-five
+{
+	grid-column: 1 ;
+	grid-row: 3;
+	width: 55%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	background: url('../images/waiter-5513560_1920.jpg');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+	/* background-color: rgb(68, 255, 0); */
+}
+
+.service-six
+{
+	grid-column: 2 ;
+	grid-row: 3;
+	width: 55%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	font-size: 2.6lvh;
+	display: flex;
+	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+	background-color: rgba(52, 12, 12, 0.551);
+	border: 2px solid rgba(41, 10, 10, 0.271);
+	/* background-color: blue; */
+}
+
+.contact{
+	background-color: white;
+	border: 2px solid black;
+	border-top: 1px solid white;
+}
+
+.titre-contact
+{
+	text-align: center;
+	margin-top: 15px;
+	font-size: 4.5lvh;
+}
+
+
+.wrapper-contact {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* grid-gap: 10px; */
+	grid-auto-rows: minmax(100px, auto);
+	margin-bottom: 50px;
+  }
+  .contact-one {
+	display: flex;
+	flex-direction: row;
+	grid-column: 1 ;
+	grid-row: 1;
+	width: 70%;
+	height: 60px;
+	margin: auto;
+	/* background-color: blue;	 */
+  }
+  .contact-two {
+	display: flex;
+	flex-direction: row;
+	grid-column: 1;
+	grid-row: 2;
+	width: 70%;
+	height: 80px;
+	margin: auto;
+	/* background-color: rgb(8, 46, 17); */
+  }
+  .contact-three {
+	display: flex;
+	flex-direction: row;
+	grid-column: 1 ;
+	grid-row: 3;
+	width: 70%;
+	height: 60px;
+	margin: auto;
+	/* background-color: blue; */
+  }
+  .contact-four {
+	grid-column: 2;
+	grid-row: 1 / 3;
+	width: 100%;
+	height: 300px;
+	margin-top: 50px;
+	background: url('../images/map_restaurant.png');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  }
+  
+.colone-text-contact
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.icon
+{
+	font-size: 8lvh;
+	color: rgb(0, 195, 255);
+}
+
+.contact-one p
+{
+	margin: auto;
+	font-size: 3lvh;
+}
+
+.colone-text-contact
+{
+	margin: auto;
+	font-size: 3lvh;
+}
+
+.contact-three p
+{
+	margin: auto;
+	font-size: 3lvh;
+}
+
+.text-contact
+{
+	color: green;
+}
+
+.designed
+{
+	background-color: brown;
+	border: 2px solid black;
+	border-top: 1px solid brown;
+}
+
+.designed-titre
+{
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+@media (max-width: 425px)
+{
+	.brand
+{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 25px;
+	font-size: 1lvh;
+}
+
+header a
+{
+	text-decoration: none;
+	font-size: 1.5lvh;
+}
+
+.text-image
+{
+	width: 100%;
+	text-align: center;
+	height: auto;
+	font-size: 2.5lvh;
+    left: 0;
+    right: 0;
+}
+
+#boite-1
+{
+	position: absolute;
+	z-index: 1;
+	top: 150px;
+	left: 35%;
+	right: 35%;
+	/* background-color: black; */
+	width: 30%;
+	height: auto;
+}
+
+.bouton-nous-contacter
+{
+	position: absolute;
+	z-index: 1;
+	top: 230px;
+	left: 25%;
+	right: 25%;
+	width: 50%;
+	height: auto;
+	padding: 10px;
+	background-color: brown;
+	border-radius: 50px;
+	border: 2px solid black;
+	font-size: 1lvh;
+}
+
+.titre-carte
+{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 3lvh;
+}
+
+.titre-grid
+{
+	text-align: center;
+	font-size: 2lvh;
+	margin: auto;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	/* grid-gap: 10px; */
+	grid-auto-rows: minmax(100px, auto);
+	margin-bottom: 50px;
+  }
+  .one {
+	grid-column: 1 ;
+	grid-row: 1;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0;
+	/* background-color: blue;	 */
+  }
+  .two {
+	grid-column: 1;
+	grid-row: 4;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0;
+	/* background-color: rgb(8, 46, 17); */
+  }
+  .three {
+	grid-column: 1 ;
+	grid-row: 7;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0;
+	/* background-color: blue; */
+  }
+  .four {
+	grid-column: 1;
+	grid-row: 2;
+	width: 95%;
+	height: 250px;
+	margin: auto;
+	margin-top: 15px;
+	/* background-color: blue; */
+	background: url('../images/bruschetta.jpg');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  }
+  .five {
+	grid-column: 1;
+	grid-row: 5;
+	width: 95%;
+	height: 250px;
+	margin: auto;
+	margin-top: 15px;
+	background: url('../images/osso-buco-2535546_1920.jpg');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+	/* background-color: rgb(8, 46, 17); */
+  }
+  .six {
+	grid-column: 1;
+	grid-row: 8;
+	width: 95%;
+	height: 250px;
+	margin: auto;
+	margin-top: 10px;
+	background: url('../images/tiramisu-4098241_1920.jpg');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+	/* background-color: blue; */
+  }
+  .seven {
+	grid-column: 1;
+	grid-row: 3;
+	width: 95%;
+	margin: auto;
+	margin-top: 15px;
+	font-size: 2.6lvh;
+	text-align: center;
+	/* background-color: blue; */
+  }
+  .eight {
+	grid-column: 1;
+	grid-row: 6;
+	width: 95%;
+	margin: auto;
+	margin-top: 15px;
+	font-size: 2.6lvh;
+	text-align: center;
+	/* background-color: rgb(8, 46, 17); */
+  }
+  .nine {
+	grid-column: 1;
+	grid-row: 9;
+	width: 95%;
+	margin: auto;
+	margin-top: 15px;
+	font-size: 2.6lvh;
+	text-align: center;
+	/* background-color: blue; */
+  }
+
+
+  .titre-services
+{
+	margin-top: 15px;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 3lvh;
+}
+
+.wrapper2
+{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	/* grid-gap: 10px; */
+	grid-auto-rows: minmax(100px, auto);
+	margin-bottom: 50px;
+}
+.service-one
+{
+	grid-column: 1 ;
+	grid-row: 1;
+	width: 90%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	background: url('../images/pizza-5349414_1920.jpg');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+	/* background-color: blue; */
+}
+
+.service-two
+{
+	grid-column: 1 ;
+	grid-row: 2;
+	width: 90%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	font-size: 2.6lvh;
+	display: flex;
+	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+	  background-color: rgba(52, 12, 12, 0.551);
+	  border: 2px solid rgba(41, 10, 10, 0.271);
+
+	/* background-color: rgb(68, 255, 0); */
+}
+
+.service-three
+{
+	grid-column: 1 ;
+	grid-row: 4;
+	width: 90%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	font-size: 2.6lvh;
+	display: flex;
+	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+	  background-color: rgba(52, 12, 12, 0.551);
+	  border: 2px solid rgba(41, 10, 10, 0.271);
+	/* background-color: blue; */
+}
+
+.service-four
+{
+	grid-column: 1 ;
+	grid-row: 3;
+	width: 90%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	background: url('../images/market-3916964_1920.jpg');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+	/* background-color: rgb(68, 255, 0); */
+}
+
+.service-five
+{
+	grid-column: 1 ;
+	grid-row: 5;
+	width: 90%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	background: url('../images/waiter-5513560_1920.jpg');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+	/* background-color: rgb(68, 255, 0); */
+}
+
+.service-six
+{
+	grid-column: 1 ;
+	grid-row: 6;
+	width: 90%;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	font-size: 2.6lvh;
+	display: flex;
+	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+	background-color: rgba(52, 12, 12, 0.551);
+	border: 2px solid rgba(41, 10, 10, 0.271);
+	/* background-color: blue; */
+}
+
+.titre-contact
+{
+	text-align: center;
+	margin-top: 15px;
+	font-size: 3lvh;
+}
+
+
+.wrapper-contact {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	/* grid-gap: 10px; */
+	grid-auto-rows: minmax(100px, auto);
+	margin-bottom: 50px;
+  }
+  .contact-one {
+	display: flex;
+	flex-direction: row;
+	grid-column: 1 ;
+	grid-row: 2;
+	width: 70%;
+	height: 60px;
+	margin: auto;
+	/* background-color: blue;	 */
+  }
+  .contact-two {
+	display: flex;
+	flex-direction: row;
+	grid-column: 1;
+	grid-row: 3;
+	width: 70%;
+	height: 80px;
+	margin: auto;
+	/* background-color: rgb(8, 46, 17); */
+  }
+  .contact-three {
+	display: flex;
+	flex-direction: row;
+	grid-column: 1 ;
+	grid-row: 4;
+	width: 70%;
+	height: 60px;
+	margin: auto;
+	/* background-color: blue; */
+  }
+  .contact-four {
+	grid-column: 1;
+	grid-row: 1 ;
+	width: 90%;
+	height: 300px;
+	margin-top: 50px;
+	margin: auto;
+	background: url('../images/map_restaurant.png');
+	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  }
+  
+  .contact-one p
+{
+	margin: auto;
+	font-size: 2.5lvh;
+}
+
+.colone-text-contact
+{
+	margin: auto;
+	font-size: 2.5lvh;
+}
+}
